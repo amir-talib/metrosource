@@ -196,16 +196,16 @@ const Services = () => {
           >
             <Box position="relative">
               <Image src={item.img} alt={item.title} w="full" h="220px" objectFit="cover" />
-              <Button
+                    <Button
                 position="absolute"
                 bottom={4}
                 right={4}
                 px={6}
-                py={2}
-                bg="#ef7826"
-                color="white"
+                      py={2}
+                      bg="#ef7826"
+                      color="white"
                 size="md"
-                rounded="full"
+                      rounded="full"
                 fontWeight="bold"
                 _hover={{
                   bg: "#fff",
@@ -221,9 +221,9 @@ const Services = () => {
                     navigate("/services");
                   }
                 }}
-              >
-                Learn More
-              </Button>
+                    >
+                      Learn More
+                    </Button>
             </Box>
             <Box p={6} flex={1} display="flex" flexDirection="column">
               <Box mb={2}>{item.icon}</Box>

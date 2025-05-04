@@ -116,7 +116,7 @@ const Services = () => {
           bg="linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.4))"
         />
         <Container maxW="container.xl" h="100%" position="relative" zIndex={1}>
-          <Flex
+            <Flex
             direction="column"
             justify="center"
             align="center"
@@ -175,7 +175,7 @@ const Services = () => {
                     objectFit="cover"
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.4 }}
-                  />
+              />
                   <Box
                     position="absolute"
                     top={0}
@@ -184,7 +184,7 @@ const Services = () => {
                     bottom={0}
                     bg="linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6))"
                   />
-                  <Flex
+                <Flex
                     position="absolute"
                     top={4}
                     left={4}
@@ -193,7 +193,7 @@ const Services = () => {
                     borderRadius="full"
                     color={textColor}>
                     {service.icon}
-                  </Flex>
+                </Flex>
                 </Box>
 
                 {/* Content Section */}
@@ -211,7 +211,7 @@ const Services = () => {
                     {service.title}
                   </Heading>
                   
-                  <Text
+                <Text
                     fontSize={{ base: "lg", md: "xl" }}
                     color={textColor}
                     opacity={0.9}
@@ -220,7 +220,7 @@ const Services = () => {
                     maxW="800px"
                     mx="auto">
                     {service.bio}
-                  </Text>
+                </Text>
 
                   {/* Services Card Row */}
                   <Flex
@@ -255,20 +255,20 @@ const Services = () => {
                           bg: "rgba(255,255,255,0.15)",
                           boxShadow: "0 8px 32px rgba(0,0,0,0.18)"
                         }}>
-                        <Text
+                <Text
                           color={textColor}
                           fontSize={{ base: "md", md: "lg" }}
                           fontWeight="medium"
                           textAlign="center">
                           {item}
-                        </Text>
+                </Text>
                       </MotionBox>
                     ))}
                   </Flex>
                 </VStack>
               </Flex>
             </MotionBox>
-          ))}
+        ))}
         </VStack>
       </Container>
       <Footer />
