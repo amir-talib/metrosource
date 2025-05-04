@@ -30,7 +30,9 @@ jobs:
           NODE_OPTIONS: --openssl-legacy-provider
 
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
+          ls -la dist/
         env:
           NODE_OPTIONS: --openssl-legacy-provider
 
@@ -38,4 +40,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           folder: dist
-          branch: gh-pages 
+          branch: gh-pages
+          clean: true 
