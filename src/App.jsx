@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Layout from "./components/MetroGlobal/Layout"
 // import Loader from "./components/MetroGlobal/Loader";
@@ -9,8 +9,8 @@ const AboutUs = lazy(() => import("./Routes/AboutUs"));
 const Projects = lazy(() => import("./Routes/Projects"));
 const Services = lazy(() => import("./Routes/services"));
 
-// Define routes using createBrowserRouter
-const router = createBrowserRouter([
+// Define routes using createHashRouter
+const router = createHashRouter([
   {
     path: "/",
     element: 
@@ -38,10 +38,8 @@ const router = createBrowserRouter([
     <Layout>
       <Services />
     </Layout>  
-  },
-], {
-  basename: '/metrosource'
-});
+  }
+]);
 
 function App() {
   return (
