@@ -22,28 +22,30 @@ const router = createBrowserRouter([
     path: "/about",
     element: 
     <Layout>
-      <AboutUs />,
+      <AboutUs />
     </Layout>
   },
   {
     path: "/projects",
     element: 
     <Layout>
-      <Projects />,
+      <Projects />
     </Layout>
   },
   {
     path: "/services",
     element: 
     <Layout>
-      <Services />,
+      <Services />
     </Layout>  
   },
-]);
+], {
+  basename: '/metrosource'
+});
 
 function App() {
   return (
-    <Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
       <RouterProvider router={router} />
     </Suspense>
   );
