@@ -1,3 +1,4 @@
+import React from 'react';
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Layout from "./components/MetroGlobal/Layout"
