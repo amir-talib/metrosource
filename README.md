@@ -1,9 +1,18 @@
-# React + Vite
+# MetroSource
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application for MetroSource services.
 
-Currently, two official plugins are available:
+## Features
+- Responsive design
+- Modern UI/UX
+- Contact integration
+- Service showcase
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Trigger redeploy
+## Development
+```bash
+npm install
+npm run dev
+```
+
+## Deployment
+This site is automatically deployed to GitHub Pages when changes are pushed to the main branch.
