@@ -17,27 +17,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'
 
       - name: Install Dependencies
         run: npm install
-        env:
-          NODE_OPTIONS: --openssl-legacy-provider
 
       - name: Build
-        run: |
-          npm run build
-          ls -la dist/
-        env:
-          NODE_OPTIONS: --openssl-legacy-provider
+        run: npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
           branch: gh-pages
